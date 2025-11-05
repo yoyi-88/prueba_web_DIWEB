@@ -1,18 +1,16 @@
+
 /* selector de id */
-#titulo {
-    color: green;
+#subtitulo {
+    color: purple;
     font-size:150%;
 }
 
-/* selector de elemento */
-p {
-    color: blue;
-}
 
 /* selector de clase */
 .importante {
-    background-color: yellow;
+    background-color: rgb(226, 226, 226);
 }
+
 
 /* selector universal */
 * {
@@ -21,6 +19,11 @@ p {
 }
 
 /* selector de atributo */
-[type="text"] {
-    border: 2px solid red;
+[type="password"] {
+    border: 2px solid blue;
+}
+
+/*selector de elemento*/
+li {
+    color: red;
 }

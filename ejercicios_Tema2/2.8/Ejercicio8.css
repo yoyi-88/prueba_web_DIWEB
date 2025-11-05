@@ -1,0 +1,18 @@
+/* Selector de id */
+#primero {
+    color: blue;
+}
+
+/* Selector de clase */
+.pares {
+    color: red;
+}
+
+.impares {
+    color: green;
+}
+
+
+
+
+
