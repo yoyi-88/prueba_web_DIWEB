@@ -1,0 +1,35 @@
+/* Regla de elemento: Aplica un color a todos los encabezados <h1>. */
+h1 {
+    color: plum;
+}
+
+/* Regla de clase: Aplica un color específico a los elementos con la clase titulo. */
+.titulo {
+    color: aquamarine;
+}
+
+/* Regla de ID: Define un color para los elementos con el ID parrafo. */
+#parrafo {
+    color: chartreuse;
+}
+
+/* Regla con !important: Aplica un color específico a los elementos con la clase texto dentro 
+del div contenedor, utilizando !important. */
+div p {
+    color: bisque !important;
+}
+
+/* Última regla en el archivo: Define un color para todos los elementos <p> al final del archivo CSS. */
+p {
+    color: brown;
+}
+
+/* ¿Qué color se aplica finalmente al encabezado <h1>? Explica cuál fue la regla ganadora y por qué. 
+Se aplica el color definido en el estilo en línea, ya que tiene el puntaje más alto. */
+
+/* ¿Cuál es el color del párrafo con el ID parrafo? ¿Qué regla prevalece?
+Tiene el color de id párrafo, ya que aunque se ha definido otro color para p más abajo, el estilo
+con id tiene más valor. */
+
+/* ¿Qué color tiene el párrafo con la clase texto dentro del div contenedor? Explica por qué se aplica ese color en particular. 
+Tiene el color que hemos definido en div p, debido que al añadir el !important le otorgamos prioridad absoluta.*/
