@@ -1,0 +1,46 @@
+/* Usa herencia para aplicar un color de texto general a todo el documento. */
+.container {
+  color: red;
+}
+
+/* Los párrafos dentro de la sección deben usar una fuente diferente de la predeterminada. */
+section p {
+  font-family: Impact;
+}
+
+/* El elemento con la clase highlight debe tener un fondo amarillo y un texto en negrita. */
+.highlight {
+  background-color: yellow;
+}
+
+/* El párrafo con el id="override" debe sobrescribir el color de texto general con uno personalizado. */
+#override {
+  color: aquamarine;
+}
+/* Asegúrate de que el título principal (h1) herede el color general pero tenga un tamaño mayor definido directamente. */
+.title {
+  color: inherit;
+  font-size: 60px;
+}
+
+/* Usa al menos una regla con !important para ganar prioridad en la cascada. */
+.important {
+  color: yellow !important;
+}
+
+/* 
+
+Respuestas a las Preguntas:
+¿Qué sucede si cambias el orden de las reglas CSS?
+
+
+¿Cómo afecta la especificidad a los estilos aplicados en el párrafo #override?
+
+¿Qué sucede si eliminas el !important de alguna regla?
+Si elimino el important el color del tercer párrafo dentro de section cambia, ya que id 
+tiene prioridad frente a class.
+
+¿Qué reglas son heredadas automáticamente y cuáles necesitas especificar explícitamente?
+En este caso, no es necesario especificar, ya que todos los elementos seencuentran dentro 
+del objeto con clase container.
+*/
