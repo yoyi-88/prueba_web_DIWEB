@@ -1,5 +1,5 @@
 /* Usa herencia para aplicar un color de texto general a todo el documento. */
-.container {
+body {
   color: red;
 }
 
@@ -32,9 +32,11 @@ section p {
 
 Respuestas a las Preguntas:
 ¿Qué sucede si cambias el orden de las reglas CSS?
-
+Si cambias el orden de las reglas CSS, puede afectar la forma en que se aplican los estilos. 
+Las reglas que aparecen más tarde en el archivo CSS tienen mayor prioridad, siempre y cuando tengan la misma especificidad.
 
 ¿Cómo afecta la especificidad a los estilos aplicados en el párrafo #override?
+Como id tiene mayor especificidad que body, el color aquamarine se aplica al párrafo con id override.
 
 ¿Qué sucede si eliminas el !important de alguna regla?
 Si elimino el important el color del tercer párrafo dentro de section cambia, ya que id 
