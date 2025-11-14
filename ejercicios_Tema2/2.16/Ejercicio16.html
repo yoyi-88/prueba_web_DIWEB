@@ -15,8 +15,8 @@
     }
 
     .box {
-      height: 300px;
-      width: 500px;
+      height: 1080px;
+      width: 1920px;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -26,18 +26,23 @@
     .div1 {
       background-image: url('https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=');
       background-attachment: fixed;
+      background-size: cover;
       font-family: 'Times New Roman', Times, serif;
       font-size: large;
       font-style: italic;
     }
 
     .div2 {
-      max-width: 500px;
+      background-image: url('https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=');
+      background-attachment: scroll;
+      background-size: cover;
 
     }
 
     .div3 {
-      max-width: 500px;
+      background-image: url('https://media.istockphoto.com/id/636379014/es/foto/manos-la-formaci%C3%B3n-de-una-forma-de-coraz%C3%B3n-con-silueta-al-atardecer.jpg?s=612x612&w=0&k=20&c=R2BE-RgICBnTUjmxB8K9U0wTkNoCKZRi-Jjge8o_OgE=');
+      background-attachment: local;
+      background-size: cover;
 
     }
   </style>
@@ -80,6 +85,15 @@
       packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
       uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
       accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <div class="">
+    <p><b>Diferencias Scroll, Fixed y local</b><br>
+      Scroll: La imagen de fondo se desplaza junto con el contenido cuando se hace scroll en la página.<br>
+      Fixed: La imagen de fondo permanece fija en su posición mientras el contenido se desplaza sobre ella al hacer
+      scroll.<br>
+      Local: La imagen de fondo se desplaza solo dentro del área del elemento que tiene el fondo, no afecta al resto de
+      la página al hacer scroll.
     </p>
   </div>
 
