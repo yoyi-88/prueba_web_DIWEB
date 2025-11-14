@@ -1,0 +1,44 @@
+/* color: Usa colores que contrasten y sean fácilmente visibles, como #333333 para el texto oscuro y #007acc para títulos. */
+
+/* font-size: Prueba tamaños en píxeles, por ejemplo, 32px para el título y 24px para el subtítulo. */
+/* text-align: Usa center o justify para alinear el texto. */
+/* text-transform: Usa uppercase para mayúsculas o capitalize para capitalizar la primera letra de cada palabra. */
+/* letter-spacing: Prueba valores como 2px o 3px para el subtítulo. */
+/* text-decoration: Usa underline para subrayado en el subtítulo. */
+/* text-indent: Usa 30px para indentar la primera línea del párrafo. */
+/* font-style: Usa italic en el bloque de cita. */
+/* background-color: Usa un color suave como #f0f8ff para resaltar el bloque de cita. */
+/* padding y border-left: Prueba 10px para padding y 3px solid #007acc para la línea de color del bloque de cita. */
+
+h1 {
+ color: #007acc;
+ font-size: 32px;
+}
+
+h2 {
+  color: #007acc;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+p {
+  color: #333333;
+  text-transform: uppercase;
+  text-indent: 30px;
+}
+
+blockquote {
+  text-transform: capitalize;
+  text-align: center;
+  font-style: italic;
+  background-color: #f0f8ff;
+  padding: 10 px;
+  border:3px solid #007acc;
+}
+
+/* ¿Cómo cambia la apariencia del texto cuando aplicas diferentes colores y tamaños?
+
+
+¿Qué combinación de propiedades y colores te parece más profesional o atractiva? 
+La combinación del blockquote ma parece la más rica en cuanto a estilos.*/
