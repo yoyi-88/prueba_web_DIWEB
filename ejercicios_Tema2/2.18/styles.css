@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
+
+h1 {
+  font-family: sans-serif;
+}
+
+.parrafo1 {
+  font-family: serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+body {
+  font-size: 16
+}
+
+.parrafo2 {
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.parrafo22 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.parrafo3 {
+  line-height: 1.8;
+  font-family: "Bitcount Grid Double Ink", system-ui;
+}
+
+/*¿Qué diferencias notas en la legibilidad entre las fuentes serif y sans-serif?
+Las sans-serif poseen mejor legibilidad y limpieza a la hora de leer.
+
+¿Cómo afecta el tamaño de la fuente y el interlineado a la comodidad de lectura?
+Un tamaño de fuente adecuado y un interlineado correcto facilitan la lectura y evitan la fatiga visual.
+
+¿Cuál es tu combinación de propiedades favorita para titulos y párrafos?
+Mi combinación favorita para títulos es una fuente sans-serif con un tamaño grande y negrita, 
+mientras que para párrafos prefiero una fuente serif con un tamaño moderado y un interlineado adecuado para 
+mejorar la legibilidad.
+*/
+
+

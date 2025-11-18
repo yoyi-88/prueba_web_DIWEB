@@ -1,0 +1,23 @@
+/* 1. Lista ordenada de tareas (ol.tareas):
+Usa el estilo list-style-type con valores como decimal-leading-zero.
+Ajusta la posición de la lista usando list-style-position para que las marcas de lista queden dentro del texto.
+Cambia el color del texto de los elementos de la lista a un tono azul oscuro, como #003366. */
+ol.tareas {
+  list-style-type: armenian;
+  list-style-position: inside;
+  color: #003366;
+}
+
+/* 2. Lista no ordenada de materiales (ul.materiales):
+Cambia el tipo de lista con list-style-type usando un estilo square.
+Aplica list-style-position para que las marcas queden fuera del texto.
+Cambia el color del texto a un tono verde oscuro, como #2a7a1f. */
+ul.materiales {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+/* 3. Lista personalizada de recursos de estudio (ul.recursos):
+Usa una imagen personalizada para los elementos de la lista mediante list-style-image. Puedes usar una imagen, como un pequeño ícono de libro o una estrella.
+Ajusta la posición de la lista usando list-style-position de manera que las marcas de lista queden dentro del texto.
+Cambia el color del texto a un tono gris oscuro, como #444444. */
