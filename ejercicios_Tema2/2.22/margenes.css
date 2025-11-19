@@ -13,6 +13,7 @@ Define márgenes diferentes para cada lado:
 Cambia el color de fondo para resaltar la diferencia. */
 .sec2 {
   padding: 10px 20px 30px 40px;
+  padding-right: 50px;
   background-color: red;
 }
 
