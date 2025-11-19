@@ -1,0 +1,35 @@
+/* Primera Sección:
+Aplica un borde con estilo dotted (punteado).
+El grosor debe ser de 3px y el color debe ser azul.
+Deja un margen de 20px alrededor y un relleno (padding) de 10px. */
+.sec1 {
+  border: 3px dotted blue;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Segunda Sección:
+Aplica un borde con estilo solid (sólido).
+Define un grosor diferente para cada lado: 5px arriba, 10px derecha, 15px abajo, y 20px izquierda.
+El color debe ser verde. */
+.sec2 {
+  border-top: 5px solid;
+  border-right: 10px solid;
+  border-bottom: 15px solid;
+  border-left: 20px solid;
+  border-color: green;
+  margin: 20px;
+  
+}
+
+
+/* Tercera Sección (Botón):
+Aplica un borde con estilo double (doble línea).
+Usa un borde rojo de 4px.
+Opcional: Añade esquinas redondeadas con border-radius de 15px. */
+.sec3 div button {
+  border: 4px double red;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+}

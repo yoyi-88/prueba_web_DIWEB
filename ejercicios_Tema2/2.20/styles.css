@@ -22,7 +22,7 @@ ul.materiales {
 Usa una imagen personalizada para los elementos de la lista mediante list-style-image. Puedes usar una imagen, como un pequeño ícono de libro o una estrella.
 Ajusta la posición de la lista usando list-style-position de manera que las marcas de lista queden dentro del texto.
 Cambia el color del texto a un tono gris oscuro, como #444444. */
-.recursos {
+ul.recursos {
   list-style-image: url(luis.webp);
   list-style-position: inside;
   color: #444444;
