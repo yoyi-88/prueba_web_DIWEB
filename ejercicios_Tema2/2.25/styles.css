@@ -1,0 +1,17 @@
+/* Fondo gris
+Ancho de 300px y alto 300px
+Borde de 15px sólido y verde
+Relleno de 50px
+Margen de 20px */
+
+div {
+  background-color: grey;
+  width: 300px;
+  height: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+
+}
+
+/*ancho: 430px / Alto: 430*/ 

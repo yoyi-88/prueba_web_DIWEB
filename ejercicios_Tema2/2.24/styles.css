@@ -1,0 +1,21 @@
+.sec1 {
+  width: 200px;
+  height: 150px;
+  background-color: aquamarine;
+}
+
+.sec2 {
+  width: 50%;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+
+.sec3 {
+  width: 300px;
+  min-height: 100px;
+  max-height: 200px;
+  background-color: burlywood;
+}
+
+

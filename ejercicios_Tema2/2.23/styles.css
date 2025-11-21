@@ -1,0 +1,23 @@
+.sec1 {
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+.sec2 {
+  padding: 10px, 15px, 20px, 25px;
+  background-color: blueviolet;
+}
+
+
+.sec3 button {
+  margin-top: 20px;
+  padding: 30px, 50px;
+  background-color: aqua;
+
+  border: none;
+  color: black;
+  font-size: 30px;
+  border-radius: 10;
+}
+
+

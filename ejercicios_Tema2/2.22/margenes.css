@@ -3,7 +3,7 @@ Aplica un margen uniforme de 20px a todos los lados.
 Cambia el fondo para que sea visible la separación entre el contenido y otros elementos. */
 
 .sec1 {
-  padding: 20px;
+  margin: 20px;
   background-color: aqua;
 }
 
@@ -12,8 +12,7 @@ Define márgenes diferentes para cada lado:
 10px arriba, 20px derecha, 30px abajo y 40px izquierda.
 Cambia el color de fondo para resaltar la diferencia. */
 .sec2 {
-  padding: 10px 20px 30px 40px;
-  padding-right: 50px;
+  margin: 10px 20px 30px 40px;
   background-color: red;
 }
 
@@ -22,6 +21,7 @@ Cambia el color de fondo para resaltar la diferencia. */
 Utiliza margin: auto para centrar el botón horizontalmente dentro de su contenedor.
 Añade un margen superior de 50px para separarlo del párrafo anterior. */
 .sec3 {
-  padding-top: 50px;
+  margin-top: 50px;
   margin: auto;
+  border: 1px solid red;
 }
