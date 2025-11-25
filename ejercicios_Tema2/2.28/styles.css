@@ -1,0 +1,12 @@
+.section1 {
+  outline: dashed aqua;
+}
+
+.section2 {
+  outline: 5px solid red;
+}
+
+.section3 {
+  outline: dotted brown;
+  outline-offset: 10px;
+}
