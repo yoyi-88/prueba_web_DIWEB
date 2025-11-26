@@ -1,0 +1,30 @@
+/* En el archivo CSS, aplica las siguientes reglas:
+Cambia la posición del título de la tabla usando caption-side.
+Configura los bordes de la tabla usando border-collapse y border-spacing.
+Ajusta el diseño de la tabla con table-layout.
+Personaliza cómo se muestran las celdas vacías usando empty-cells. */
+
+.horario {
+  empty-cells: hide;
+  caption-side: top;
+  border-collapse: separate;
+  border-spacing: 0,1;
+  table-layout: auto;
+  
+}
+
+td, th {
+  border: 2px solid;
+  
+}
+
+/* Alterna colores en las filas para mejorar la legibilidad. */
+.par {
+  background-color: rgba(172, 255, 47, 0.349);
+}
+
+/* Cambia el color del borde y el fondo de las celdas de encabezado. */
+.encabezado th {
+  border: 3px dotted rgb(251, 255, 20);
+  background-color: rgba(207, 250, 18, 0.822);
+}
