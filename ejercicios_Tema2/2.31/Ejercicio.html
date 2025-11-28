@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Práctico: 31</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function mostrarElemento() {
+            var elemento = document.getElementById("elementoOculto");
+            if (elemento.style.display === "none") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+
+        }
+    </script>
+
+<body>
+
+    <!-- Crea una lista de elementos con diferentes etiquetas (div, span, p, button, etc.).
+    Añade un párrafo que explique qué es display y cómo funciona cada valor. -->
+
+    <h1 class="center">Propiedad CSS: display</h1>
+    <p>El atributo display en CSS determina cómo se muestra un elemento en la página web.
+        Algunos de los valores más comunes son:</p>
+    <div class="block-element"><strong>block:</strong> El elemento se muestra como un bloque, ocupando todo el ancho
+        disponible y comenzando en una nueva línea.</div>
+    <span class="inline-element"><strong>inline:</strong> El elemento se muestra en línea con otros elementos,
+        ocupando solo el espacio necesario.</span>
+    <p class="inline-block-element"><strong>inline-block:</strong> Combina características de block e inline,
+        permitiendo que el elemento tenga dimensiones pero se comporte como un elemento en línea.</p>
+    <p id="elementoOculto" class="none-element"><strong>none:</strong> El elemento no se muestra en absoluto, y no
+        ocupa espacio en el diseño.</p>
+    <button onclick="mostrarElemento()">Mostrar/Ocultar elemento</button>
+
+</body>
+
+
+</html>

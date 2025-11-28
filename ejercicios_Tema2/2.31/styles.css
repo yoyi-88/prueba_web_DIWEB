@@ -1,0 +1,23 @@
+/* Aplica display: block a un elemento para que ocupe todo el ancho disponible.
+Usa display: inline para colocar varios elementos en línea.
+Usa display: inline-block para combinar características de block e inline.
+Oculta un elemento con display: none. */
+.block-element {
+  display: block;
+  background-color: lightblue;
+}
+.inline-element {
+  display: inline;
+  background-color: lightgreen;
+}
+.inline-block-element {
+  display: inline-block;
+  background-color: lightcoral;
+}
+.none-element {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}

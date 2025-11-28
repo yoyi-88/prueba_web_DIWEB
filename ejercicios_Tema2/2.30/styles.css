@@ -25,6 +25,6 @@ td, th {
 
 /* Cambia el color del borde y el fondo de las celdas de encabezado. */
 .encabezado th {
-  border: 3px dotted rgb(251, 255, 20);
+  border: 3px dashed rgb(251, 255, 20);
   background-color: rgba(207, 250, 18, 0.822);
 }
