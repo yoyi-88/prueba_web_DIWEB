@@ -1,0 +1,56 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    border: 1px solid yellowgreen;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.columna1 {
+    height: 300px;
+    width: 460px;
+    border: 1px solid blue;
+    float: left;
+    text-align: center;
+    background-color: lightblue;
+}
+.columna2 {
+    height: 300px;
+    width: 460px;
+    border: 1px solid red;
+    background-color: lightcoral;
+    float: left;
+    text-align: center;
+}
+.columna3 {
+    height: 300px;
+    width: 460px;
+    border: 1px solid green;
+    background-color: lightgreen;
+    float: left;
+    text-align: center;
+}
+
+.columExtra {
+    height: 300px;
+    width: 460px;
+    border: 1px solid burlywood;
+    background-color: lightsalmon;
+    float: left;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid violet;
+    clear:left;
+}
+
+/* ¿Qué sucede si no se usa clear?
+Que el footer se mueve a la misma altura a la que empiezan las columnas*/
+
+/*¿Qué otros elementos además de clear pueden solucionar problemas similares? 
+Por ejemplo, position: absolute;
+*/

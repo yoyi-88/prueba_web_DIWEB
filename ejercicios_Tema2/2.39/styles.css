@@ -1,0 +1,20 @@
+.tareas :first-child {
+  background-color: aqua;
+}
+.contactos :first-child {
+  background-color: aqua;
+}
+
+.tareas :last-child {
+  font-weight: bold;
+}
+.contactos :last-child {
+  font-weight: bold;
+}
+
+
+.tareas :nth-child(3) {
+  background-color: bisque;
+  border-radius: 10px;
+  color: violet;
+}
