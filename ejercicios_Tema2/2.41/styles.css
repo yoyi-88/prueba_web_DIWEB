@@ -1,0 +1,21 @@
+#home {
+  width: 550px;
+  height: 550px;
+  background-image: url(Element_Game_58.jpg);
+  background-position: 1600px 1850px;
+
+}
+
+#conf {
+  width: 550px;
+  height: 550px;
+  background-image: url(Element_Game_58.jpg);
+  background-position: 850px 1850px;
+}
+
+#play {
+  width: 1130px;
+  height: 550px;
+  background-image: url(Element_Game_58.jpg);
+  background-position: 5500px 2750px;
+}

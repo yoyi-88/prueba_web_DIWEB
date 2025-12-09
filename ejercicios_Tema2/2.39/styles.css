@@ -18,3 +18,13 @@
   border-radius: 10px;
   color: violet;
 }
+
+.tareas li:nth-child(3) + li {
+  color: brown;
+}
+
+
+.contactos :nth-child(2) {
+  border: 1px solid green;
+}
+

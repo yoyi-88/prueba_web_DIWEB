@@ -1,0 +1,44 @@
+.contenedor {
+  width: 200px;
+  margin: 20px;
+  border: 1px dashed;
+  text-align: center;
+}
+
+/* Primera línea: Cambia el color de la primera línea de cada párrafo a azul y usa un tamaño 
+de fuente más grande. */
+p::first-line {
+  color: blue;
+  font-size: 20px;
+}
+
+/* Primera letra: Aplica un estilo decorativo a la primera letra de cada párrafo (por ejemplo, 
+color rojo, fuente más grande y negrita). */
+p::first-letter {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Antes del documento (::before): Agrega un mensaje decorativo antes del contenido principal, 
+por ejemplo, "¡Prepárate para aprender CSS!". */
+body::before {
+  content: "Prepárate para aprender CSS!";
+}
+
+/* Después del documento (::after): Añade un mensaje motivador después del contenido principal, 
+como "¡Sigue practicando y mejora cada día!". */
+body::after {
+  content: "Sigue practicando y mejorando cada día!";
+}
+
+/* Selección de texto (::selection): Cambia el color de fondo y el color de texto cuando se 
+selecciona cualquier parte del documento. */
+p::selection {
+  color:  rgb(255, 255, 255);
+  background-color:rgb(0, 0, 0);
+}
+
+
+
+
