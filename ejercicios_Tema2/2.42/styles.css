@@ -1,0 +1,43 @@
+/* Los párrafos deben tener una fuente en itálica, negrita y un tamaño de 18 px en 
+cualquier dispositivo. */
+/* Los enlaces siempre tienen que aparecer centrados. */
+/* Tanto los párrafos como la imagen deben estar alineados a la izquierda en todos los 
+dispositivos, excepto cuando la imagen se muestre en una pantalla. */
+@media all {
+  p {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  a {
+    display: block;
+    text-align: left;
+  }
+
+  img {
+    display: block;
+    margin: left;
+  };
+}
+
+/* Las imágenes deben aparecer centradas sólo cuando se visualicen en una pantalla. */
+@media screen {
+  img {
+    display: block;
+    margin:auto;
+  }
+
+  a {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
