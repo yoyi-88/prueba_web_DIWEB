@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Maestro UT2</title>
+    <style>
+        /* 1. SELECTOR UNIVERSAL Y MODELO DE CAJAS (Págs. 63-70)
+           Aplicamos border-box para que el padding no aumente el tamaño total. */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 2. HERENCIA Y PROPIEDADES DE TEXTO (Págs. 40, 54)
+           Definimos la fuente base que heredarán los hijos. */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 200vh; /* Altura extra para probar el scroll y position: fixed */
+        }
+
+        /* --- ESTILOS DE LA TARJETA --- */
+
+        /* 3. CLASE (Especificidad: 10) - Estilos Base */
+        .tarjeta {
+            /* POSICIONAMIENTO (Págs. 84-86)
+               Fixed: Se mueve con la ventana, ignora el scroll. */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            
+            /* Z-INDEX (Pág. 88): Asegura que flote sobre otros contenidos */
+            z-index: 1000;
+
+            /* DIMENSIONES Y FONDO (Págs. 44-50) */
+            width: 350px;
+            background-color: white; /* Será sobrescrito por el ID abajo */
+            
+            /* MODELO DE CAJAS (Págs. 63-66) */
+            padding: 20px;
+            border: 1px solid #ccc;
+            /* Sombras (CSS3) para dar profundidad */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* 4. ID (Especificidad: 100) - GANA A LA CLASE
+           Demostración de Especificidad: Este color de fondo gana al de .tarjeta */
+        #aviso-importante {
+            background-color: #fffbe6; /* Un amarillo muy suave */
+        }
+
+        /* 5. FLOAT Y CLEAR (Págs. 90-91) */
+        .icono-alerta {
+            float: left; /* Saca el elemento del flujo y lo empuja a la izquierda */
+            width: 40px;
+            height: 40px;
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            line-height: 40px; /* Centrado vertical del texto */
+            border-radius: 50%; /* Borde redondeado */
+            margin-right: 15px; /* Separación con el texto */
+        }
+
+        /* 6. PSEUDO-ELEMENTO (Pág. 104)
+           Añadimos contenido decorativo antes del título */
+        h3::before {
+            content: "📢 "; 
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 0.9em; /* Unidad relativa */
+            color: #666;
+            /* Gestión del contenido flotado */
+            overflow: hidden; /* Truco para limpiar floats internos si fuera necesario */
+        }
+
+        /* 7. PSEUDO-CLASE Y OUTLINE (Págs. 74, 100) */
+        .btn-cerrar {
+            display: inline-block; /* Comportamiento de caja pero en línea */
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-cerrar:hover {
+            background-color: #555; /* Cambio de color al pasar el ratón */
+            /* OUTLINE: No mueve el diseño, solo resalta */
+            outline: 2px solid red; 
+            outline-offset: 2px;
+        }
+
+        /* 8. MEDIA QUERIES (Págs. 107-113)
+           Diseño Responsivo: Si la pantalla es menor a 480px (móviles) */
+        @media screen and (max-width: 480px) {
+            .tarjeta {
+                width: 100%; /* Ocupa todo el ancho */
+                right: 0;
+                bottom: 0;
+                border-radius: 0; /* Quitamos bordes redondeados */
+            }
+            
+            #aviso-importante {
+                background-color: #e3f2fd; /* Cambiamos color en móvil para notar la diferencia */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo Maestro UT2</h1>
+    <p>Haz scroll hacia abajo para ver que la tarjeta te persigue (position: fixed).</p>
+
+    <div id="aviso-importante" class="tarjeta" style="border-left: 5px solid #ff9800;">
+        
+        <div class="icono-alerta">!</div>
+        
+        <div class="contenido">
+            <h3>Atención</h3>
+            <p>
+                Este ejemplo combina <strong>Float</strong>, <strong>Posicionamiento</strong> 
+                y <strong>Modelo de Cajas</strong>. Cambia el tamaño de tu navegador para ver 
+                la <em>Media Query</em> en acción.
+            </p>
+            <a href="#" class="btn-cerrar">Entendido</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
