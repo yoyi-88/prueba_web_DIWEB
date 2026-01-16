@@ -1,0 +1,11 @@
+@mixin test($colorFondo, $colorLetra, $borde, $tamanoLetra, $centrar) {
+    background-color: $colorFondo;
+    color: $colorLetra;
+    border: $borde;
+    font-size: $tamanoLetra;
+    text-align: $centrar
+}
+
+div {
+    @include test(lightYellow, aqua, (1px solid green), 200px, center);
+}

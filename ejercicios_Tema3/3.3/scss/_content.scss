@@ -1,0 +1,36 @@
+
+.content {
+
+    h2 {
+        font: {
+            size: 50px;
+            color: $colorSecundario;
+        }
+        text: {
+            align: center;
+            transform: uppercase;
+
+        }
+        padding: {
+            left: $paddingBase;
+            right: $paddingBase;
+            bottom: $paddingBase;
+            top: $paddingBase;
+        }
+    }
+
+    p {
+        padding: {
+            left: $paddingBase;
+            right: $paddingBase;
+            bottom: $paddingBase;
+            top: $paddingBase;
+        }
+        text: {
+            align: center;
+            transform: uppercase;
+
+        }
+
+    }
+}

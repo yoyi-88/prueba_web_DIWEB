@@ -1,0 +1,18 @@
+@mixin boton ($bg: #3498db, $color: white, $padding: 10px, $radius: 5px) {
+    background-color: $bg; 
+    color: $color;
+    padding: $padding;
+    border-radius: $radius;
+}
+.boton-primario {
+    @include boton();
+}
+
+.boton-secundario {
+    @include boton($bg:#2ecc71);
+}
+
+.boton-alerta {
+    @include boton($bg: #e74c3c, $padding: 15px);
+    
+}
