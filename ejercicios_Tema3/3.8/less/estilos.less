@@ -1,0 +1,44 @@
+// A. Definición de Variables
+// Crea variables para los colores y el espaciado base:
+@primary-color: aquamarine;
+@text-color: #333;
+@spacing: 20px;
+@tamanoBase: 16px;
+
+// B. Uso de Mixins
+// Crea un mixin llamado .flex-center() que aplique display: flex, justify-content: center y align-items: center. Úsalo donde creas necesario.
+.flex-center(@display: flex; @justify-content: center; @align-items: center;){
+    display: @display;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+// C. Anidamiento (Nesting)
+// Estila la clase .card. Dentro de ella, anida los estilos para .card-title, .card-price y .card-btn.
+
+// Reto extra: Usa el símbolo & para el estado :hover del botón.
+.card {
+    .flex-center();
+    color: @text-color;
+    padding: @spacing;
+
+    .card-title{
+        font-weight: bold;
+        .flex-center(@justify-content: right);
+    }
+    
+    // D. Operaciones
+    // El tamaño de la fuente del precio (.card-price) debe ser el doble del tamaño base (por ejemplo, si la base es 16px, usa una operación para que sea 32px).
+    .card-price{
+        font-size: @tamanoBase * 2;
+    }
+    .card-btn{
+        color: red;
+    }
+
+    &:hover {
+        background-color: @primary-color;
+    }
+ 
+}  
+

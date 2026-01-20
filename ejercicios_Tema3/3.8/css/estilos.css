@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  padding: 20px;
+}
+.card .card-title {
+  font-weight: bold;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.card .card-price {
+  font-size: 32px;
+}
+.card .card-btn {
+  color: red;
+}
+.card:hover {
+  background-color: aquamarine;
+}

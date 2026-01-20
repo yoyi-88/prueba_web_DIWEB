@@ -4,8 +4,74 @@ $colores: (
   alerta: #e74c3c
 );
 
-$tipos-fuente: ("Arial", "Verdana", "Helvetica");
+$tipos-fuente: (
+  "Arial",
+  "Verdana",
+  "Helvetica"
+);
 
-.titulo {
-    
+// 🔹 String Functions
+// Crea un selector .titulo
+// Con unquote() y to-upper-case() convierte "Mi título" a mayúsculas sin comillas
+// Aplica el resultado como content en un pseudo-elemento ::before
+
+.titulo::before {
+  content: to-upper-case(unquote("Mi título"));
+}
+
+// Numeric Functions
+// Crea un selector .caja
+// Usa percentage() y ceil() para calcular el ancho de la caja en % si el ancho es 480px sobre 1200px
+// Aplica el ancho al CSS
+.caja {
+  width: percentage(480 / 1200);
+}
+
+// List Functions
+// Crea un selector .fuentes
+// Usa nth() para seleccionar la segunda fuente de $tipos-fuente y aplicarla a font-family
+// Usa length() para mostrar en consola el número de fuentes
+.fuentes {
+  font-family: nth($tipos-fuente, 2);
+  // Para ver la longitud en consola, puedes usar @debug
+  @debug length($tipos-fuente);
+}
+
+//  Map Functions
+// Crea un selector .boton-primario
+// Usa map-get($colores, primario) para el background-color
+// Usa map-has-key() para verificar si $colores tiene la clave alerta (puede mostrar resultado en pseudo-elemento ::after)
+.boton-primario {
+  background-color: map-get($colores, primario);
+
+  &::after {
+    content: "#{if(map-has-key($colores, alerta), 'Alerta definida', 'Alerta no definida')}";
+  }
+}
+
+// Selector Functions
+// Crea dos botones .boton1 y .boton2
+// Usa selector-append() para crear un selector dinámico .boton1:hover y aplica un estilo distinto
+.boton1 {
+  background-color: map-get($colores, secundario);
+}
+
+.boton1:hover {
+  background-color: darken(map-get($colores, secundario), 10%);
+}
+
+//  Introspection Functions
+// Crea un selector .info
+// Usa type-of() para mostrar en consola el tipo de $colores y $tipos-fuente
+.info {
+  @debug type-of($colores);
+  @debug type-of($tipos-fuente);
+}
+
+// Color Functions
+// Crea un selector .alerta
+// Usa lighten() o darken() para modificar $colores:alerta y aplicar al background-color
+// Ajusta opacity() si quieres
+.alerta {
+  background-color: lighten(map-get($colores, alerta), 15%);
 }

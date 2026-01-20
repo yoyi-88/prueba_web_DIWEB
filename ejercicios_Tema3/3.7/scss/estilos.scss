@@ -1,0 +1,44 @@
+$base: 10px;
+$ancho-caja: 300px;
+$ancho-total: 1200px;
+$fuente-size: 14px;
+$modo-compacto: true;
+
+// Operadores aritméticos
+.caja {
+  padding: $base * 2;
+  margin-bottom: $base + 5px;
+  width: ($ancho-caja / $ancho-total) * 100%;
+  height: $base * 6;
+}
+
+// Operadores de comparación
+.texto {
+  font-size: $fuente-size;
+
+  @if $fuente-size >= 16px {
+    font-weight: bold;
+  } @else {
+    font-weight: normal;
+  }
+}
+
+// Operadores lógicos
+body {
+  @if $modo-compacto == true and $base < 15px {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+}
+
+// Operadores con strings (interpolación)
+$nombre-selector: "margen-top";
+
+.#{$nombre-selector} {
+  margin-top: $base * 2;
+}
+
+// ¿Qué ventaja tiene que Sass haga los cálculos antes de que el navegador reciba el CSS?
+/* Sass permite realizar cálculos complejos y utilizar variables, lo que facilita la gestión y mantenimiento del código CSS. 
+Al hacer los cálculos antes de que el navegador reciba el CSS, se asegura que el código final sea optimizado y eficiente, reduciendo 
+la carga en el navegador y mejorando el rendimiento de la página web.*/

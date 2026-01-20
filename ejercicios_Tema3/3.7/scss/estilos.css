@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.caja {
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 25%;
+  height: 60px;
+}
+
+.texto {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.margen-top {
+  margin-top: 20px;
+}
+
+/* Sass permite realizar cálculos complejos y utilizar variables, lo que facilita la gestión y mantenimiento del código CSS. 
+Al hacer los cálculos antes de que el navegador reciba el CSS, se asegura que el código final sea optimizado y eficiente, reduciendo 
+la carga en el navegador y mejorando el rendimiento de la página web.*//*# sourceMappingURL=estilos.css.map */
