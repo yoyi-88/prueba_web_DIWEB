@@ -1,0 +1,98 @@
+/* 1. Modelo de caja (box-model)
+Aplica a todas las cajas (.caja):
+
+Un ancho fijo de 150px
+
+Un alto fijo de 100px
+
+Un borde visible
+
+Un padding interno de 10px
+
+Comprueba cómo cambia el tamaño real del elemento al añadir padding y borde. */
+
+.caja {
+    max-width: 150px;
+    max-height: 100px;
+    border: 1px solid green;
+    
+
+    /* 2. display
+    Observa el comportamiento por defecto de las cajas.
+    Cambia el display de .caja a:
+
+    inline
+
+    inline-block
+
+    block
+
+    Anota las diferencias:
+    ¿Respeta el ancho y alto?
+    ¿Se colocan en línea o en columna? 
+        - Inline: En columna y superponiendose ante el nav. Se establece de forma automática
+        - Block: En línea. Respeta anchura y altura.
+        - inline-block: en columna, no se superpone a el nav y respeta altura y anchura
+    */
+    display: block;
+
+    /* 3. margin y padding
+        Añade:
+
+        margin: 20px a .caja
+
+        padding: 10px
+
+        Ajusta el margen para que haya separación horizontal y vertical clara entre las cajas. */
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+/* 4. Posicionamiento básico (position)
+Aplica position: relative a .contenedor.
+
+Aplica position: absolute a .especial y desplázala:
+
+top: 20px
+
+right: 20px
+
+Observa desde qué elemento se posiciona y por qué.
+
+No se busca memorización, solo comprensión visual del concepto. 
+
+Se queda dentro del contenedor, pero como no cabe abajo, se posiciona a la derecha*/
+.contenedor {
+    position: relative;
+}
+.especial {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* 5. Selectores y herencia
+Aplica a body:
+
+font-family
+
+color
+
+Comprueba qué elementos heredan estas propiedades.
+
+Cambia el color del texto solo de .especial.
+
+Aplica un estilo distinto al pasar el ratón por los enlaces del menú (:hover). */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color:  brown;
+}
+.especial {
+    color: blue;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
