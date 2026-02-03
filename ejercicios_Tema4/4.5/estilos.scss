@@ -1,0 +1,115 @@
+/* 1. Header
+Logo a la izquierda
+
+Menú a la derecha
+
+Elementos alineados verticalmente
+
+Separación uniforme entre enlaces
+
+Conceptos evaluados:
+
+display: flex
+
+justify-content
+
+align-items
+
+gap */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+        display: flex;
+        gap: 30px;
+    }
+    
+}
+// 2. Layout principal
+// Sidebar y contenido en una fila
+
+// Sidebar con ancho fijo
+
+// Contenido ocupa el espacio restante
+
+// Conceptos evaluados:
+
+// Eje principal
+
+// flex-grow
+
+// Relación entre contenedores flex anidados
+
+// 3. Cards
+// Cards en una sola fila
+
+// Espacio uniforme entre ellas
+
+// Todas con el mismo tamaño
+
+// Adaptables al ancho del contenedor
+
+// Conceptos evaluados:
+
+// Distribución del espacio
+
+// Flexibilidad de los elementos
+
+// Evitar márgenes individuales
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+    .sidebar {
+        width: 200px;
+    }
+    .contenido {
+        width: 100%;
+        text-align: center;
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+            .card {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// 4. Footer
+// Elementos en una sola fila
+
+// Espacio repartido automáticamente
+
+// Contenido alineado verticalmente
+
+// Conceptos evaluados:
+
+// justify-content: space-between
+
+// Alineación en eje secundario
+
+// 5. Requisitos adicionales
+// Uso correcto de flex-direction
+
+// Uso de gap en lugar de márgenes cuando sea posible
+
+// Código legible y ordenado
+
+// Extensión opcional
+// Hacer que las cards pasen a columna si no caben (sin media queries)
+
+// Cambiar el orden visual del sidebar en pantallas pequeñas usando order

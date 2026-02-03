@@ -1,0 +1,22 @@
+/* El contenedor debe ocupar toda la pantalla
+
+La caja debe quedar centrada horizontal y verticalmente
+
+La caja debe tener un tamaño visible y un color de fondo */
+
+.contenedor {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+.contenedor .caja {
+    display: flex;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+/* Los elementos deben estar en una sola fila
+
+Deben ocupar el ancho completo del footer
+
+El espacio entre ellos debe repartirse automáticamente
+
+El contenido debe estar centrado verticalmente */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: chocolate;
+    padding: 20px;
+}

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* 1. Header
+Logo a la izquierda
+
+Menú a la derecha
+
+Elementos alineados verticalmente
+
+Separación uniforme entre enlaces
+
+Conceptos evaluados:
+
+display: flex
+
+justify-content
+
+align-items
+
+gap */
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu {
+  display: flex;
+  gap: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.main .sidebar {
+  width: 200px;
+}
+.main .contenido {
+  width: 100%;
+  text-align: center;
+}
+.main .contenido .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.main .contenido .cards .card {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=estilos.css.map */

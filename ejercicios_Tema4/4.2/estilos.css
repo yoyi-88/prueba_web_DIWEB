@@ -1,0 +1,15 @@
+/* Los enlaces deben mostrarse en línea
+
+Deben tener separación uniforme
+
+El menú debe estar alineado horizontalmente
+
+El contenido debe estar centrado verticalmente */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
