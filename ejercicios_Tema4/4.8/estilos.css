@@ -1,1 +1,28 @@
-/*# sourceMappingURL=estilos.css.map */
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+.dashboard .header {
+  grid-column: 1/-1;
+  background-color: beige;
+  padding: 20px;
+}
+.dashboard .menu {
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+.dashboard .contenido {
+  background-color: azure;
+}
+.dashboard .extra {
+  grid-column: 1/-1;
+  background-color: chocolate;
+  padding: 20px;
+}
+.dashboard .footer {
+  grid-column: 1/-1;
+  background-color: beige;
+  padding: 20px;
+}/*# sourceMappingURL=estilos.css.map */
