@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* Reset básico para visualizar mejor el ejercicio */
+body {
+  text-align: center;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+}
+
+.header {
+  grid-column: 1/-1;
+  background-color: grey;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: grey;
+  padding: 20px;
+}
+
+.main {
+  background-color: #ecf0f1;
+  color: #333;
+  padding: 20px;
+}
+
+.footer {
+  grid-column: 1/-1;
+  background-color: grey;
+  padding: 20px;
+}/*# sourceMappingURL=estilos.css.map */
