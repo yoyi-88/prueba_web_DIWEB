@@ -1,0 +1,108 @@
+// Objetivo
+// Maquetar una página web sencilla aplicando:
+
+// CSS Grid para la estructura general
+// Flexbox para la alineación y distribución de elementos internos
+// Requisitos
+// La página debe ocupar toda la altura de la pantalla.
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+// La estructura general tendrá:
+
+// Header
+// Main
+// Footer
+// La estructura general debe hacerse con CSS Grid.
+
+// El header contendrá:
+
+// Un logo (texto)
+
+// Un menú de navegación horizontal
+// El alineado interno debe hacerse con Flexbox.
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    height: 80px;
+    gap: 15px;
+
+    .logo {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+
+
+
+    h1 {
+        font-style: italic;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+// El main mostrará 3 cards alineadas horizontalmente y centradas.
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: GREY;
+
+    .card {
+        width: 300px; 
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: white;
+
+        img {
+            width: 100%; 
+            height: auto; 
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+    }
+}
+
+// El footer mostrará dos textos separados (izquierda y derecha).
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    height: 80px;
+
+}
+
+// No se permite usar frameworks (Bootstrap, Tailwind, etc.).
