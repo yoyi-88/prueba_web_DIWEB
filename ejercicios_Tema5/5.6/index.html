@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.6</title>
+    <style>
+        /* Cabecera: Debe tener una imagen de fondo (usando background-image en CSS) con estilos como posición, tamaño y efectos visuales. */
+        header {
+            background-image: url('fondoCozas.jpg');
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+
+        main {
+            max-width: 100%;
+        }
+
+        main .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 500px;
+            height: 700px;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .card img:hover {
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Prueba de imagen de fondo</h1>
+    </header>
+
+    <main>
+        <div class="galeria">
+            <picture class="card">
+                <img src="desierto.jpg" alt="desierto">
+            </picture>
+            <picture class="card">
+                <img src="nieve.jpg" alt="nieve">
+            </picture>
+            <picture class="card">
+                <img src="playa.jpg" alt="playa">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
