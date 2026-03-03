@@ -1,0 +1,23 @@
+/* style.css */
+.audio-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.custom-audio {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    filter: sepia(20%) saturate(70%) hue-rotate(190deg) brightness(100%);
+    /* El filtro permite cambiar ligeramente el color del reproductor nativo */
+}
+
+.custom-audio:focus {
+    outline: 3px solid #007bff; /* Mejora la visibilidad para navegación por teclado */
+}

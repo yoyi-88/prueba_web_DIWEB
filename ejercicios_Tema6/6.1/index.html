@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor de Audio Accesible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="audio-container">
+        <h2 id="audio-label">Reproductor de Música de Fondo</h2>
+        
+        <audio 
+            controls 
+            loop 
+            preload="metadata" 
+            class="custom-audio"
+            aria-labelledby="audio-label">
+            
+            <source src="audio/gold.mp3" type="audio/mpeg">
+            <source src="audio/gold.aac" type="audio/aac">
+            <source src="audio/gold.wav" type="audio/wav">
+            
+            
+            
+            <p>Tu navegador no admite la reproducción de audio. 
+               Puedes <a href="audio/gold.mp3">descargar el archivo aquí</a>.
+            </p>
+        </audio>
+    </section>
+
+</body>
+</html>
