@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video SD Personalizado</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        
+        /* Contenedor con borde negro y resolución SD */
+        .video-container {
+            border: 2px solid black;
+            width: 640px;
+            height: 480px;
+            background-color: #000;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Estilos para los controles personalizados */
+        .controls {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+
+    <h2>Reproductor de Video</h2>
+
+    <div class="video-container">
+        <video id="myVideo" poster="video/caratula.png" preload="metadata">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.webm" type="video/webm">
+            <source src="video/video.ogv" type="video/ogg">
+            Tu navegador no es compatible con la reproducción de video HTML5.
+        </video>
+    </div>
+
+    <div class="controls">
+        <button onclick="playPause()">Reproducir / Pausa</button>
+        <button onclick="stopVideo()">Detener</button>
+        <button onclick="muteVideo()">Mute</button>
+    </div>
+
+    <div class="links">
+        <a href="video/video.webm" download="video_descarga.webm">Descargar video</a> | 
+        <a href="video/video.webm" target="_blank">Abrir en pestaña nueva</a>
+    </div>
+
+    <script>
+        const video = document.getElementById("myVideo");
+
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function stopVideo() {
+            video.pause();
+            video.currentTime = 0; // Reinicia el video al principio
+        }
+
+        function muteVideo() {
+            video.muted = !video.muted;
+        }
+    </script>
+
+</body>
+</html>
