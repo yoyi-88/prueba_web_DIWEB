@@ -1,25 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6.3 - Animaciones</title>
     <style>
-        h1 {
-            position: relative;
-            animation-name: animation;
-            animation-duration: 4s;
+        .animation {
+            display: inline-block;
+            animation: moverYCrecer 5s linear 4 alternate;
 
         }
-        @keyframes animation {
-            0%   {color:red; left:0px; top:0px;}
-            100% {color: yellow; left: 1900px; top: 0px;}
+
+        .boton-psicodelico {
+            display: inline-block;
+
+        }
+
+        .boton-psicodelico:hover {
+            animation: colorAgrandarYGiro 0.5s linear 1;
+        }
+
+        .circulo {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 50%;
+            margin: 50px;
+            transition: background-color 2s steps(4);
+        }
+
+        .circulo:hover {
+            background-color: #e74c3c;
+        }
+
+        @keyframes moverYCrecer {
+            0% {
+                transform: translateX(0) scale(1);
+                color: black;
+            }
+
+            100% {
+                /* Ajustamos a 95vw para que no se salga totalmente de la pantalla */
+                transform: translateX(95vw) scale(5);
+                color: #ff4500;
+            }
+        }
+
+        @keyframes colorAgrandarYGiro {
+            0% {
+                transform: rotate(0deg) scale(1);
+                color: black;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(2);
+                color: #ff4500;
+            }
+
         }
     </style>
 </head>
-<body>
-    <h1>p</h1>
 
-    
+<body>
+    <h1>Animation:</h1>
+    <h1 class="animation">p</h1>
+
+    <h1>Transition</h1>
+    <a href="" class="boton-psicodelico">Pasa el ratón sobre mí</a>
+
+    <h1>Steps()</h1>
+    <p>Pasa el ratón para ver el cambio en 4 pasos:</p>
+    <div class="circulo"></div>
+
+
 </body>
+
 </html>
